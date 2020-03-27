@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald:200,400,600&display=swap');
+
+
+$lightRed:rgb(170, 113, 113);
+$lightGreenBlue:rgb(82, 224, 224);
+$borderColor: rgb(167, 167, 167);
+$border: 1px solid $borderColor;
+$shadow: 0 0 30px 3px $borderColor;
+$shadow20: 0 0 20px 3px rgb(245, 245, 245);
+
+$shadow_white: 0 0 30px 3px white;
+$shadow_white_log:-50px 0 20px 3px rgb(82, 136, 224);
+
+$blueGradien90:linear-gradient(90deg, rgb(82, 136, 224) 50%, rgb(82, 96, 224), rgb(82, 136, 224) 100%);
+$blueGradienMobile30:linear-gradient(-30deg, rgb(82, 96, 224) 50%, rgb(82, 136, 224) 75%, rgb(82, 96, 224) 100%);
+$transitionLog: 1s ease-in-out;
+
+$shadowLeft:-70px;
+$txtLogShadow: $shadowLeft 0 2px rgba(0, 0, 0, 0.37);
+$boxLogShadow: $shadowLeft 0 15px 3px rgba(0, 0, 0, 0.37);
+$fontColorGrey:rgb(139, 139, 139);

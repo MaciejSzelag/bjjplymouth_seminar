@@ -1,0 +1,208 @@
+.log-wrap {
+    width: 100%;
+    height: 100vh;
+    background-color: #818fff;
+    perspective: 1000px;
+    animation: opacity_0_1 1s ease-out 1 both;
+
+    .login-container {
+        @include fixedCenter;
+        width: 50%;
+        height: 50vh;
+        background-image: $blueGradienMobile30;
+        border: $border;
+        box-shadow: $shadow_white_log;
+        border-radius: 20px;
+        // animation: loadPage_3d 1s ease-in-out 1 both;
+        transform-style: preserve-3d;
+        transform-origin: left;
+        transform: rotateY(37deg) translate(-50%, -50%);
+        perspective: 1000px;
+        transition: $transitionLog;
+        overflow: hidden;
+
+        .wrap {
+            @include flexCenter;
+
+            justify-content: space-evenly;
+            width: 100%;
+            height: 100%;
+            transform-style: preserve-3d;
+            transform-origin: left;
+
+            transition: $transitionLog;
+
+            .top-name {
+                color: whitesmoke;
+                font-size: 3.5rem;
+                text-shadow: $txtLogShadow;
+                transition: $transitionLog;
+            }
+
+            form {
+                @include flexCenter;
+                flex-direction: column;
+                justify-content: space-evenly;
+                width: 50%;
+                height: 40%;
+
+
+
+                .f-inputs {
+                    @include flexCenter;
+                    justify-content: space-between;
+                    // flex-direction: column;
+                    width: 70%;
+                    color: whitesmoke;
+                    text-shadow: $txtLogShadow;
+                    font-size: 1.6rem;
+                    transition: $transitionLog;
+
+
+
+                    input {
+                        width: 200px;
+                        height: 27px;
+                        outline: none;
+                        border: 1px solid rgb(126, 126, 126);
+                        border-radius: 10px;
+                        padding: 0 10px;
+                        color: $fontColorGrey;
+                        box-shadow: $boxLogShadow;
+                        transition: $transitionLog;
+
+
+
+                    }
+
+                    .input-name {
+                        z-index: 1;
+
+                    }
+
+                    .submit {
+                        background-color: #4957d6;
+                        color: whitesmoke;
+                        height: 25px;
+                    }
+
+                }
+
+                .submit {
+                    @include flexCenter;
+                    width: 100px;
+                    justify-self: start;
+
+                }
+
+
+
+            }
+        }
+
+
+    }
+
+    .login-container:hover {
+        transform: rotateY(0) translate(-50%, -50%);
+        box-shadow: 0 0 15px 3px rgb(171, 202, 251);
+        ;
+
+        .wrap {
+            .top-name {
+
+                text-shadow: 0px 0 2px rgb(0, 0, 0);
+            }
+
+            form {
+
+                .f-inputs {
+
+                    text-shadow: 0px 0 2px rgb(0, 0, 0);
+
+                    input {
+                        box-shadow: 0 0 15px 3px rgba(0, 0, 0, 0.37);
+
+                    }
+
+
+
+                }
+            }
+
+        }
+
+
+
+    }
+}
+
+@media(max-width:1280px) {
+    .log-wrap {
+        .login-container {
+            width: 60%;
+        }
+    }
+
+}
+
+@media(max-width: 1024px) {
+    .log-wrap {
+        .login-container {
+
+            width: 95%;
+            height: 40vh;
+
+
+
+
+            .wrap {
+                @include flexCenter;
+                flex-direction: column;
+                justify-content: center;
+                width: 100%;
+                height: 100%;
+
+                .top-name {
+                    @include flexCenter;
+                    width: 40%;
+                    height: 20%;
+                    color: whitesmoke;
+                    font-size: 3.5rem;
+                }
+
+                form {
+                    @include flexCenter;
+                    flex-direction: column;
+                    justify-content: space-evenly;
+                    width: 60%;
+                    height: 40%;
+
+
+
+                    .f-inputs {
+
+                        font-size: 1.8rem;
+
+
+
+
+
+                    }
+
+                    .submit {
+                        @include flexCenter;
+                        width: 100px;
+                        justify-self: start;
+
+                    }
+
+
+
+                }
+            }
+
+
+        }
+    }
+}
