@@ -1,0 +1,59 @@
+.loadPage_main {
+    // display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-image: $blueGradienMobile30;
+    opacity: 1;
+    transition: .5s;
+    z-index: 1000;
+
+    .center-wrap {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 300px;
+        height: 50%;
+        transform: translate(-50%, -50%);
+
+        .line {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 10px;
+            height: 10px;
+            background-color: white;
+            transform: translateX(5px) translateY(0) scale(0);
+            transition: .2s linear;
+            border-radius: 50%;
+        }
+
+        .addAnime {
+            animation: loadPage_main 1s linear infinite both;
+        }
+
+    }
+
+}
+
+.loadPage-hide {
+    display: none;
+}
+
+@keyframes loadPage_main {
+    0% {
+
+        transform: translateX(5px) translateY(0) scale(0);
+    }
+
+
+    50% {
+        transform: translateX(5px) translateY(20px) scale(1.8);
+    }
+
+    100% {
+        transform: translateX(5px) translateY(0) scale(0);
+    }
+}

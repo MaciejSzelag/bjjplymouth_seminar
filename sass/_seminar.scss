@@ -12,6 +12,7 @@
         width: 100%;
         height: calc(100vh - 90px);
         margin-top: 90px;
+        overflow: hidden;
 
         .header_img,
         .header_greeting {

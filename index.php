@@ -7,6 +7,11 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css\style.min.css">
+        <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+        <link rel="manifest" href="favicon/site.webmanifest">
+
         <?php 
      if(isset($_GET['page'])){
       include("php/variables.php");
@@ -25,7 +30,22 @@
     echo " <title> CheckMat | $title</title>";
    ?>
     </head>
+
     <body>
+        <section class="loadPage_main">
+            <div class="center-wrap">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </section>
         <div class="bars-wrap" id="mobile-menu">
             <div class="bars">
                 <div class="bar top"></div>
@@ -68,10 +88,11 @@
             </div>
         </div>
         <footer>
-                     <div class="feet">Copyrights &copy <?php echo date("Y");?> BJJ Plymouth - All Rights Reserved</div>
+            <div class="feet">Copyrights &copy <?php echo date("Y");?> BJJ Plymouth - All Rights Reserved</div>
             <div class="feet">Website made by Maciej Szeląg</div>
         </footer>
-     <script src="js/main.js"></script>
+        <script src="js/loadPage.js"></script>
+        <script src="js/main.js"></script>
     </body>
 
 </html>

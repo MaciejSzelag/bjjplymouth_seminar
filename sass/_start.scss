@@ -60,7 +60,7 @@
 
             .start_title_h1 {
                 animation: loadPageStart 1s ease-in-out 1 both;
-                font-size: 16rem;
+                font-size: 15rem;
                 color: rgb(219, 219, 219);
                 text-shadow: 0 0 10px black, 0 0 100px rgb(26, 0, 141);
             }
@@ -74,7 +74,7 @@
 
         .start_title_h1 {
             animation: loadPageStart 1s ease-in-out 1 both;
-            font-size: 10rem;
+            font-size: 9rem;
             color: rgb(65, 65, 65);
         }
 
@@ -102,7 +102,7 @@
 
         .start_title {
             .start_title_h1 {
-                font-size: 12rem;
+                font-size: 10rem;
             }
 
             .start_title_h2 {
@@ -126,7 +126,7 @@
 
             .start_title_header {
                 .start_title_h1 {
-                    font-size: 14rem;
+                    font-size: 10rem;
                 }
             }
         }
@@ -143,7 +143,7 @@
     }
 }
 
-@media (max-width:732px) and (orientation: landscape) {
+@media (max-width:768px) and (orientation: landscape) {
     .start-wrap {
         .start_header {
             .get_started {
@@ -295,7 +295,7 @@
     }
 }
 
-@media (max-width:412px) and (orientation: portrait) {
+@media (max-width:414px) and (orientation: portrait) {
     .start-wrap {
         .start_header {
             .get_started {
