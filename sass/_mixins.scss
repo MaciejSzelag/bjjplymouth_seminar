@@ -4,6 +4,17 @@
     align-items: center;
 }
 
+@mixin flexCenterEvenly {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+@mixin flexCenterBetween{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 @mixin flexCenterColumn {
     display: flex;
     justify-content: center;
