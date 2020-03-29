@@ -2015,18 +2015,50 @@ footer {
   left: -200%;
 }
 
-@media screen and (max-width: 1024px) {
-  .price-wrap {
-    height: 200vh;
+@media (max-width: 1366px) {
+  .price-wrap .b-kids {
+    top: 150px;
+  }
+  .price-wrap .price-container .price_small_container .price_cards .card {
+    width: 19%;
+    height: 100%;
+    margin-left: 5px;
+  }
+  .price-wrap .price-container .price_small_container .price_cards .card .topCard .card-title {
+    font-size: 3rem;
+  }
+  .price-wrap .price-container .price_small_container .price_cards .card p {
+    font-size: 1.8rem;
+  }
+  .price-wrap .price-container .price_small_container .price_cards .popularCard .topCard .card-title {
+    font-size: 3.8rem;
+  }
+  .price-wrap .price-container .price_small_container .price_cards .popularCard p {
+    font-size: 2.8rem;
+  }
+}
+
+@media (max-width: 1024px) and (max-height: 1366px) {
+  .price-wrap .b-kids {
+    top: 100px;
+    width: 420px;
+    height: 60px;
+    font-size: 1.9rem;
   }
   .price-wrap .price-container {
     top: 150px;
-    height: calc(200vh - 250px);
+    height: calc(91vh - 60px);
   }
   .price-wrap .price-container .price_small_container .p_container_title {
-    height: 5%;
+    height: 20%;
+  }
+  .price-wrap .price-container .price_small_container .p_container_title .title-price {
+    font-size: 4rem;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
   .price-wrap .price-container .price_small_container .price_cards {
+    height: 80%;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -2037,50 +2069,250 @@ footer {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    width: 75%;
-    height: 25%;
-    margin-top: 15px;
+    width: 80%;
+    height: 20%;
+    margin-top: 10px;
   }
   .price-wrap .price-container .price_small_container .price_cards .card .topCard .card-title {
-    font-size: 5rem;
+    font-size: 4rem;
   }
   .price-wrap .price-container .price_small_container .price_cards .card p {
-    font-size: 2rem;
-  }
-  .price-wrap .price-container .price_small_container .price_cards .popularCard {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
+    font-size: 2.7rem;
   }
   .price-wrap .price-container .price_small_container .price_cards .popularCard .topCard .card-title {
-    -webkit-transform: rotate(-35deg);
-            transform: rotate(-35deg);
-    font-size: 6rem;
+    font-size: 5rem;
   }
   .price-wrap .price-container .price_small_container .price_cards .popularCard p {
-    -webkit-transform: rotate(-35deg);
-            transform: rotate(-35deg);
     font-size: 3rem;
   }
 }
 
-@media screen and (max-width: 768px) {
-  .price-wrap {
-    height: 180vh;
+@media (max-width: 1024px) and (max-height: 768px) {
+  .price-wrap .b-kids {
+    top: 50px;
+    width: 220px;
+    height: 35px;
+    font-size: 1.4rem;
   }
   .price-wrap .price-container {
-    height: calc(180vh - 250px);
+    top: 100px;
+    height: calc(89vh - 60px);
+  }
+  .price-wrap .price-container .price_small_container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .price-wrap .price-container .price_small_container .p_container_title {
+    height: 20%;
+  }
+  .price-wrap .price-container .price_small_container .p_container_title .title-price {
+    font-size: 2.8rem;
+    -webkit-transform: translateY(-40px);
+            transform: translateY(-40px);
+  }
+  .price-wrap .price-container .price_small_container .price_cards {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    height: 67%;
+    width: 90%;
   }
   .price-wrap .price-container .price_small_container .price_cards .card {
-    width: 85%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 19%;
+    height: 100%;
+  }
+  .price-wrap .price-container .price_small_container .price_cards .card .topCard .card-title {
+    font-size: 2.5rem;
   }
   .price-wrap .price-container .price_small_container .price_cards .card p {
-    font-size: 3rem;
+    font-size: 1.8rem;
   }
   .price-wrap .price-container .price_small_container .price_cards .popularCard .topCard .card-title {
-    font-size: 6rem;
+    font-size: 3.5rem;
   }
   .price-wrap .price-container .price_small_container .price_cards .popularCard p {
+    font-size: 2.3rem;
+  }
+}
+
+@media (max-width: 1024px) and (max-height: 600px) {
+  .price-wrap .b-kids {
+    top: 50px;
+    width: 220px;
+    height: 35px;
+    font-size: 1.4rem;
+  }
+  .price-wrap .price-container {
+    top: 100px;
+    height: calc(89vh - 60px);
+  }
+  .price-wrap .price-container .price_small_container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .price-wrap .price-container .price_small_container .p_container_title {
+    height: 20%;
+  }
+  .price-wrap .price-container .price_small_container .p_container_title .title-price {
+    font-size: 2.8rem;
+    -webkit-transform: translateY(-40px);
+            transform: translateY(-40px);
+  }
+  .price-wrap .price-container .price_small_container .price_cards {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    height: 67%;
+    width: 90%;
+  }
+  .price-wrap .price-container .price_small_container .price_cards .card {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 19%;
+    height: 100%;
+  }
+  .price-wrap .price-container .price_small_container .price_cards .card .topCard .card-title {
+    font-size: 2.5rem;
+  }
+  .price-wrap .price-container .price_small_container .price_cards .card p {
+    font-size: 1.8rem;
+  }
+  .price-wrap .price-container .price_small_container .price_cards .popularCard .topCard .card-title {
     font-size: 3.5rem;
+  }
+  .price-wrap .price-container .price_small_container .price_cards .popularCard p {
+    font-size: 2.3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .price-wrap .b-kids {
+    top: 50px;
+    height: 55px;
+  }
+  .price-wrap .price-container {
+    top: 100px;
+    height: calc(90vh - 60px);
+  }
+  .price-wrap .price-container .price_small_container .p_container_title {
+    height: 17%;
+  }
+  .price-wrap .price-container .price_small_container .p_container_title .title-price {
+    font-size: 3.2rem;
+  }
+  .price-wrap .price-container .price_small_container .price_cards {
+    height: 80%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .price-wrap .price-container .price_small_container .price_cards .card {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 80%;
+    height: 20%;
+    margin-top: 10px;
+  }
+  .price-wrap .price-container .price_small_container .price_cards .card .topCard .card-title {
+    font-size: 3.5rem;
+  }
+  .price-wrap .price-container .price_small_container .price_cards .card p {
+    font-size: 2.4rem;
+  }
+  .price-wrap .price-container .price_small_container .price_cards .popularCard .topCard .card-title {
+    font-size: 4rem;
+  }
+  .price-wrap .price-container .price_small_container .price_cards .popularCard p {
+    font-size: 2.7rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .price-wrap .b-kids {
+    top: 50px;
+    width: 320px;
+    height: 40px;
+  }
+  .price-wrap .price-container .price_small_container .p_container_title .title-price {
+    font-size: 2.8rem;
+  }
+  .price-wrap .price-container .price_small_container .price_cards .card {
+    width: 75%;
+    height: 18%;
+  }
+  .price-wrap .price-container .price_small_container .price_cards .card .topCard .card-title {
+    font-size: 2.8rem;
+  }
+  .price-wrap .price-container .price_small_container .price_cards .card p {
+    font-size: 1.8rem;
+  }
+  .price-wrap .price-container .price_small_container .price_cards .popularCard .topCard .card-title {
+    font-size: 3.1rem;
+  }
+  .price-wrap .price-container .price_small_container .price_cards .popularCard p {
+    font-size: 2.1rem;
+  }
+}
+
+@media (max-width: 414px) {
+  .price-wrap .b-kids {
+    top: 45px;
+    width: 200px;
+    height: 30px;
+    font-size: 1.3rem;
+  }
+  .price-wrap .price-container {
+    top: 110px;
+    height: calc(90vh - 60px);
+  }
+  .price-wrap .price-container .price_small_container .p_container_title {
+    height: 15%;
+  }
+  .price-wrap .price-container .price_small_container .p_container_title .title-price {
+    font-size: 1.7rem;
+  }
+  .price-wrap .price-container .price_small_container .price_cards {
+    height: 80%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .price-wrap .price-container .price_small_container .price_cards .card {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 80%;
+    height: 20%;
+    margin-top: 10px;
+  }
+  .price-wrap .price-container .price_small_container .price_cards .card .topCard .card-title {
+    font-size: 2rem;
+  }
+  .price-wrap .price-container .price_small_container .price_cards .card p {
+    font-size: 1.4rem;
+  }
+  .price-wrap .price-container .price_small_container .price_cards .popularCard .topCard .card-title {
+    font-size: 2.2rem;
+  }
+  .price-wrap .price-container .price_small_container .price_cards .popularCard p {
+    font-size: 1.7rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
