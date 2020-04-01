@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-
-
 <html lang="en">
 
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css\style.min.css">
+        <link rel="stylesheet" href="css\all.min.css">
+        <link rel="stylesheet" href="css\fontawesome.min.css">
         <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
@@ -27,7 +27,7 @@
          include("php/start.php");
           
     }
-    echo " <title> CheckMat | $title</title>";
+    echo " <title> BJJ Plymouth | $title</title>";
    ?>
     </head>
 
@@ -57,8 +57,7 @@
                 <li><a href="?page=about">About Us</a></li>
                 <li><a href="?page=gallery">Gallery</a></li>
                 <li><a href="?page=seminars">Seminars</a></li>
-                <li><a href="?page=adults">Adults</a></li>
-                <li><a href="?page=kids">Kids</a></li>
+                <li><a href="?page=timetable">Timetable</a></li>
                 <li><a href="?page=prices">Prices</a></li>
                 <li><a href="?page=contact">Contact</a></li>
                 <li><a href="?page=partners">Partners</a></li>
