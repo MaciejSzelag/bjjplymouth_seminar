@@ -1,0 +1,220 @@
+.timetable-wrap {
+    width: 100%;
+    height: auto;
+    padding-top: 150px;
+    background-color: rgb(174, 182, 255);
+    background-image: linear-gradient(-30deg,
+            rgba(82, 96, 224, 0.9) 50%,
+            rgba(82, 136, 224, 0.9) 75%,
+            rgba(82, 96, 224, 0.9) 100%);
+
+    .timetable-wrap_container {
+        @include flexCenter;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+
+        .t-title {
+            font-size: 4rem;
+            color: rgb(255, 255, 255);
+            text-shadow: -2px -2px 2px black;
+        }
+
+        .container_t,
+        .container_info {
+            width: 100%;
+        }
+
+        .container_t {
+            @include flexCenter;
+            flex-wrap: wrap;
+            height: auto;
+            padding: 100px 50px;
+
+            .day-card {
+                position: relative;
+                width: 250px;
+                height: 450px;
+                border: 1px solid rgb(82, 96, 224);
+                border-top: 3px solid rgba(161, 255, 247, 0.513);
+                border-radius: 10px;
+                margin: 50px 5px;
+                overflow: hidden;
+                background-color: rgb(255, 238, 208);
+                transform: translateY(0) scale(1);
+                transition: 1.6s cubic-bezier(0.24, 0.47, 0.02, 1.91);
+                box-shadow: 0 0 30px 15px rgba(0, 36, 66, 0.924);
+
+                .day-card_name,
+                .day-card_times {
+                    position: absolute;
+                    left: 0;
+                    width: 100%;
+                }
+
+                .day-card_name {
+                    @include flexCenter;
+                    top: 0;
+                    height: 40px;
+                    font-size: 2rem;
+                    color: white;
+                    border-bottom: 1px solid white;
+                    background-image: $blueGradienMobile30;
+                }
+
+                .day-card_times {
+                    box-shadow: 0 -5px 20px 5px rgba(0, 71, 129, 0.924);
+
+                    top: 40px;
+                    height: calc(100% - 40px);
+
+                    .day-time {
+                        @include flexCenterEvenly;
+                        flex-direction: column;
+                        width: 100%;
+                        height: 25%;
+
+                        p {
+                            font-size: 2rem;
+                            padding: 5px;
+                            // background-color: rgb(82, 96, 224);
+                        }
+
+                        .className {
+                            text-align: center;
+                            width: 96%;
+                            font-size: 1.8rem;
+                        }
+
+                        .mx,
+                        .kids,
+                        .bja,
+                        .open {
+                            color: white;
+                        }
+
+                        .mx {
+                            background-color: $mixLevelColor;
+                        }
+
+                        .kids {
+                            background-color: $kidsColor;
+                            color: black;
+                            // text-shadow: 0 0 2px black;
+                        }
+
+                        .bja {
+                            background-color: $beginersColor;
+                        }
+
+                        .open {
+                            background-color: $openMatColor;
+                        }
+
+                        .nogi {
+                            background-color: $nogiColor;
+                            text-shadow: 0 0 2px white;
+                        }
+                    }
+                }
+            }
+
+            .day-card:hover {
+                transform: translateY(-30px) scale(1.1);
+                margin: 0 50px;
+                box-shadow: 0 0 30px 15px rgba(0, 36, 66, 0.233);
+            }
+        }
+
+        .container_info {
+            @include flexCenterEvenly;
+            flex-direction: row;
+
+            height: auto;
+            padding: 80px 0;
+            flex-wrap: wrap;
+            ;
+
+            //   background-color: rgb(0, 63, 0);
+            .info-card {
+                position: relative;
+                width: 400px;
+                height: 550px;
+                border: 1px solid rgb(82, 96, 224);
+                border-top: 3px solid rgba(161, 255, 247, 0.513);
+                border-radius: 10px;
+                margin: 20px 0;
+                overflow: hidden;
+                background-color: rgb(255, 238, 208);
+                transform: translateX(0);
+                transition: 1.6s cubic-bezier(0.24, 0.47, 0.02, 1.91);
+                box-shadow: 0 0 10px 5px rgba(0, 36, 66, 0.924);
+                transform: scale(1);
+
+
+                .info-card_title {
+                    @include flexCenter;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 50px;
+                    font-size: 2rem;
+                    color: white;
+                    // border-bottom: 1px solid black;
+                    background-color: $beginersColor;
+
+                }
+
+                .c-private {
+                    background-image: $blueGradienMobile30;
+                }
+
+                .c-beginner {
+                    background-color: $beginersColor;
+                }
+
+                .c-kids {
+                    background-color: $kidsColor;
+                    color: black;
+                }
+
+                .c-nogi {
+                    background-color: $nogiColor;
+                    color: black;
+                    text-shadow: 0 0 2px white;
+                }
+
+                .c-mix {
+                    background-color: $mixLevelColor;
+                }
+
+                .c-open {
+                    background-color: $openMatColor;
+                }
+
+                .info-card_desc {
+                    @include flexCenterEvenly;
+                    flex-direction: column;
+                    position: absolute;
+                    top: 50px;
+                    left: 0;
+                    width: 100%;
+                    height: calc(100% - 50px);
+                    font-size: 1.8rem;
+                    padding: 10px 50px;
+                    box-shadow: 0 -5px 10px 3px rgba(255, 255, 255, 0.424);
+
+                }
+
+
+            }
+
+            .info-card:hover {
+                transform: scale(1.1);
+                margin: 40px;
+                box-shadow: 0 0 10px 5px rgba(0, 36, 66, 0.233);
+            }
+        }
+    }
+}
