@@ -218,3 +218,175 @@
         }
     }
 }
+
+@media (max-width: 1280px) {
+    .timetable-wrap {
+        .timetable-wrap_container {
+            .container_info {
+                .info-card {
+                    width: 450px;
+
+                }
+
+                .info-card:hover {
+                    margin: 30px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) and (orientation: portrait) {
+    .timetable-wrap {
+        .timetable-wrap_container {
+            .container_t {
+
+
+                .day-card:hover {
+                    transform: translateY(0) scale(1);
+                    margin: 0 10px;
+                }
+            }
+
+            .container_info {
+                .info-card {
+                    width: 550px;
+
+                    .info-card_title {
+                        font-size: 2.2rem;
+                    }
+
+                }
+
+                .info-card:hover {
+                    transform: scale(1);
+                    margin: 5px;
+
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 414px) and (orientation: portrait) {
+    .timetable-wrap {
+        .timetable-wrap_container {
+            .container_info {
+                .info-card {
+                    width: 350px;
+
+                    .info-card_title {
+                        font-size: 2.2rem;
+                    }
+
+                }
+
+                .info-card:hover {
+                    margin: 20px 0;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 360px) and (orientation: portrait) {
+    .timetable-wrap {
+        .timetable-wrap_container {
+            .container_t {
+                padding: 20px 10px;
+
+                .day-card {
+                    width: 280px;
+                    margin: 20px 5px;
+                }
+
+                .day-card:hover {
+                    transform: translateY(0) scale(1);
+                    margin: 0 10px;
+                }
+            }
+
+            .container_info {
+                .info-card {
+                    width: 320px;
+                    height: 400px;
+
+                    .info-card_title {
+                        font-size: 2.2rem;
+                    }
+                }
+
+                .info-card-big {
+
+                    height: 640px;
+                }
+
+                .info-card-med {
+
+                    height: 520px;
+                }
+
+                .info-card-small {
+
+                    height: 450px;
+                }
+
+                .info-card:hover {
+                    margin: 20px 0;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 360px) and (orientation: portrait) {
+    .timetable-wrap {
+        .timetable-wrap_container {
+            .container_t {
+                padding: 20px 10px;
+
+                .day-card {
+                    width: 280px;
+                    margin: 20px 5px;
+                }
+
+                .day-card:hover {
+                    transform: translateY(0) scale(1);
+                    margin: 0 10px;
+                }
+            }
+
+            .container_info {
+                .info-card {
+                    width: 290px;
+                    height: 480px;
+
+                    .info-card_title {
+                        font-size: 2.2rem;
+                    }
+                }
+
+                .info-card-big {
+
+                    height: 750px;
+                }
+
+                .info-card-med {
+
+                    height: 620px;
+                }
+
+                .info-card-small {
+
+                    height: 480px;
+                }
+
+                .info-card:hover {
+                    margin: 20px 0;
+                }
+
+
+            }
+        }
+    }
+}
