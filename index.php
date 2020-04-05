@@ -4,6 +4,14 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="A Leading Brasilian Jiu Jitsu in Plymouth. Kids Jiu Jitsu,  Adult Jiu Jitsu, Brazilian Jiu Jitsu in PlymouthThe best place to learn BJJ. Be stronger and smarter.">
+        <meta name="robots" content="index, follow, max-image-preview:large">
+        <link rel="canonical" href="http://bjjplymouthseminar.co.uk/">
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="Brasilian Jiu Jitsu | Start">
+        <meta property="og:locale" content="en_GB">
+        <meta property="og:url" content="http://bjjplymouthseminar.co.uk/">
+        <meta property="og:site_name" content="Brasilian Jiu jitsu Plymouth">
         <link rel="stylesheet" href="css\style.min.css">
         <link rel="stylesheet" href="css\all.min.css">
         <link rel="stylesheet" href="css\fontawesome.min.css">
