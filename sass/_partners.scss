@@ -1,0 +1,182 @@
+.partners-wrap {
+    @include flexCenter;
+    padding: 180px 50px;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    background-color: rgb(19, 24, 42);
+    color: white;
+
+    .partners_h1 {
+        font-size: 6rem;
+        text-transform: uppercase;
+    }
+
+    .partners_p {
+        margin: 50px 0;
+
+        font-size: 3rem;
+    }
+
+
+
+    .partners_container {
+        @include flexCenterEvenly;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        height: auto;
+
+
+        .partners-box {
+            @include flexCenter;
+            flex-direction: column;
+            flex-wrap: wrap;
+            width: 600px;
+            height: 800px;
+            background-color: rgb(10, 13, 27);
+            margin: 50px 0;
+
+
+            .box-img,
+            .box-desc {
+                @include flexCenter;
+                flex-direction: column;
+                // flex-wrap: wrap;
+                overflow: hidden;
+                width: 100%;
+                height: 50%;
+                border-radius: 5px;
+
+            }
+
+            .box-img {
+
+                border-top: 3px solid rgba(255, 255, 255, 0.164);
+
+                a {
+                    @include flexCenter;
+                    width: 50%;
+                    height: 70%;
+
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+
+            .box-desc {
+                background-color: rgb(0, 16, 42);
+                border-left: 1px solid $weakWhite;
+                border-right: 1px solid $weakWhite;
+                border-bottom: 3px solid $weakWhite;
+                padding: 10px 50px;
+
+                h1 {
+                    margin-bottom: 50px;
+
+                    a {
+                        color: white;
+                        font-size: 3rem;
+                        text-decoration: none;
+                    }
+                }
+
+                p {
+                    color: white;
+                    font-size: 2rem;
+
+                    span {
+                        display: block;
+                        padding: 0 5px;
+                        background-color: rgb(255, 255, 255);
+                        color: black;
+                        margin: 20px 0;
+                        border-top-left-radius: 5px;
+                        border-bottom-right-radius: 5px;
+                    }
+
+                }
+            }
+        }
+    }
+
+}
+
+@media (max-width: 700px) and (orientation: portrait) {
+    .partners-wrap {
+        padding: 180px 20px;
+
+        .partners_h1 {
+            font-size: 4rem;
+        }
+
+        .partners_p {
+            font-size: 2rem;
+        }
+
+        .partners_container {
+            .partners-box {
+                height: 700px;
+
+
+
+                .box-img,
+                .box-desc {
+                    @include flexCenter;
+                    flex-direction: column;
+                    // flex-wrap: wrap;
+                    overflow: hidden;
+                    width: 100%;
+                    height: 50%;
+                    border-radius: 5px;
+
+                }
+
+                .box-img {
+
+                    border-top: 3px solid rgba(255, 255, 255, 0.164);
+
+                    a {
+                        @include flexCenter;
+                        width: 50%;
+                        height: 70%;
+
+                        img {
+                            width: 130%;
+                        }
+                    }
+                }
+
+                .box-desc {
+
+                    padding: 10px 20px;
+
+                    h1 {
+                        margin-bottom: 20px;
+
+                        a {
+
+                            font-size: 2rem;
+
+                        }
+                    }
+
+                    p {
+
+                        font-size: 1.6rem;
+
+                        span {
+
+                            padding: 0 2px;
+                            border-top-left-radius: 1px;
+                            border-bottom-right-radius: 1px;
+                        }
+
+                    }
+                }
+            }
+        }
+
+    }
+}
